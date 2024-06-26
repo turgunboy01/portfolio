@@ -30,8 +30,8 @@ const data = [
   {
     img: img4,
     title: "Netflix Clone",
-    link: "https://netflix-clone-psi-olive.vercel.app",
-    githublink: "https://netflix-cone-pink.vercel.app",
+    link: "https://netflix-cone-pink.vercel.app/",
+    githublink: "https://github.com/turgunboy01/netflix-cone",
   },
   {
     img: img5,
