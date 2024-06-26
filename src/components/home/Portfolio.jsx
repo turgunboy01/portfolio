@@ -119,7 +119,7 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] py-[40px]">
           {data.map((item) => (
-            <div className="group  relative h-[250px] overflow-hidden rounded-md">
+            <div className="group  relative h-[250px] shadow-lg overflow-hidden rounded-md">
               <img
                 src={item.img}
                 className="object-cover w-full h-full"
