@@ -4,7 +4,6 @@ import {
   FaHome,
   FaInstagram,
   FaLinkedin,
-  FaTelegram,
   FaTelegramPlane,
   FaUser,
 } from "react-icons/fa";
@@ -12,6 +11,7 @@ import img from "../../../public/image.jpg";
 import { IoBriefcase } from "react-icons/io5";
 import { HiOutlineServerStack } from "react-icons/hi2";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Sidebar = () => {
   return (
@@ -55,46 +55,56 @@ const Sidebar = () => {
         </div>
         <div className="p-[20px]  items-center flex flex-col gap-5">
           <li className="flex flex-col gap-4">
-            <a
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
               href="#"
               className="text-[#fff] flex items-center gap-3  text-center text-[25px] leading-[34px] font-bold "
             >
               <FaHome size={30} />
               Home
-            </a>
-            <a
+            </Link>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
               href="#"
               className="text-[#fff] flex items-center gap-3  text-center text-[25px] leading-[34px] font-bold "
             >
               <FaUser />
               About Me
-            </a>{" "}
-            <a
+            </Link>{" "}
+            <Link
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={500}
               href="#"
               className="text-[#fff] flex items-center gap-3  text-center text-[25px] leading-[34px] font-bold "
             >
               <IoBriefcase />
               Portfolio
-            </a>{" "}
-            <a
-              href="#"
-              className="text-[#fff] flex items-center gap-3  text-center text-[25px] leading-[34px] font-bold "
-            >
-              <HiOutlineServerStack />
-              Services
-            </a>
-            <a
+            </Link>{" "}
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
               href="#"
               className="text-[#fff] flex items-center gap-3  text-center text-[25px] leading-[34px] font-bold "
             >
               <MdEmail />
               Contact
-            </a>
+            </Link>
           </li>
         </div>
-        {/* <div className=" absolute -bottom-6 mt-[30px] text-[18px] text-[#fff]  text-center">
-          <p>&copy; Copyright 2024</p>
-        </div> */}
       </div>
     </div>
   );

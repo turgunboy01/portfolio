@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
   return (
     <div
+      id="home"
       className="w-full h-[100vh] flex items-center"
       style={{ backgroundImage: `url('${bg}')`, backgroundSize: "100% 100%" }}
     >

@@ -11,73 +11,87 @@ import img9 from "../../../public/img8.png";
 import img10 from "../../../public/img9.png";
 import img11 from "../../../public/img10.png";
 import img12 from "../../../public/img11.png";
+import { IoIosGlobe } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
 
 const data = [
   {
     img: img2,
     title: "UIC Group Clone",
     link: "https://ts-4-green.vercel.app/",
+    githublink: "https://github.com/turgunboy01/ts-4",
   },
   {
     img: img3,
     title: "Udevs Clone",
     link: "https://udevs-seven.vercel.app/",
+    githublink: "https://github.com/turgunboy01/udevs",
   },
   {
     img: img4,
     title: "Netflix Clone",
     link: "https://netflix-clone-psi-olive.vercel.app",
+    githublink: "https://github.com/turgunboy01/netflix-cone",
   },
   {
     img: img5,
     title: "Green shop clone",
     link: "https://green-shop-gray.vercel.app",
+    githublink: "https://github.com/turgunboy01/green-shop",
   },
   {
     img: img6,
     title: "Cuntry Appliicate",
     link: "https://country-app-lemon-chi.vercel.app/",
+    githublink: "https://github.com/turgunboy01/country-app",
   },
   {
     img: img7,
     title: "Crypto Application",
     link: "https://crypto-humter.vercel.app/",
+    githublink: "https://github.com/turgunboy01/cryptoHumter",
   },
   {
     img: img9,
     title: "Food Shop Application",
     link: "https://examenwork.netlify.app/",
+    githublink: "https://github.com/turgunboy01/home10",
   },
   {
     img: img10,
     title: "Travel Application",
     link: "https://my-travel-ap.netlify.app/",
+    githublink: "",
   },
   {
     img: img11,
     title: "Eccommerce Application",
     link: "https://shop-ap.netlify.app/",
+    githublink: "https://github.com/turgunboy01/shop-app",
   },
   {
     img: img12,
     title: "Cource WebSite",
     link: "https://cours-app.netlify.app/",
+    githublink: "https://github.com/turgunboy01/course-app",
   },
   {
     img: img8,
     title: "Age Calculator Application",
     link: "https://hove7.vercel.app/",
+    githublink: "https://github.com/turgunboy01/hove7/tree/master/src",
   },
   {
     img: img1,
     title: "Movix Movie Application ",
     link: "https://elaborate-pithivier-ddd52a.netlify.app",
+    githublink: "https://github.com/turgunboy01/movie-App",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <div className="w-full px-[20px] sm:px-[50px] py-[80px]">
+    <div id="portfolio" className="w-full px-[20px] sm:px-[50px] py-[80px]">
       <h1 className=" pb-8 lg:text-[48px] lg:leading-[38px] md:text-[40px] md:leading-[50px] sm:text-[32px] sm:leading-[40px] text-[28px] leading-[34px]  font-extrabold aos-init aos-animate">
         Skills
       </h1>
@@ -115,6 +129,22 @@ const Portfolio = () => {
                 <h2 className="text-[22px] text-center text-[#fff] tracking-wide font-semibold">
                   {item.title}
                 </h2>
+                <div className="flex gap-3 pt-[10px]">
+                  <a
+                    href={item.githublink}
+                    className="hover:text-[#fff]"
+                    target="_blank"
+                  >
+                    <FaGithub size={25} />
+                  </a>
+                  <a
+                    href={item.link}
+                    className="hover:text-[#fff]"
+                    target="_blank"
+                  >
+                    <IoIosGlobe size={27} />
+                  </a>
+                </div>
               </div>
             </div>
           ))}

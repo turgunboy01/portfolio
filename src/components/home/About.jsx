@@ -3,25 +3,14 @@ import img from "../../../public/image.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
 const About = () => {
   return (
-    <div className="bg-[#fff]  px-[20px] sm:px-[50px] py-[80px]">
+    <div id="about" className="bg-[#fff]  px-[20px] sm:px-[50px] py-[80px]">
       <div>
         <h1 className=" pb-8 lg:text-[48px] lg:leading-[38px] md:text-[40px] md:leading-[50px] sm:text-[32px] sm:leading-[40px] text-[28px] leading-[34px]  font-extrabold aos-init aos-animate">
           About Me
         </h1>
         <div className="w-[120px] h-[4px] rounded-lg bg-[#0db39f]" />
 
-        <div className="pt-[30px]">
-          <p className="text-[14px] xl:text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            reprehenderit ipsa dignissimos molestiae, dolor eos voluptatem,
-            necessitatibus rem tenetur dicta voluptas sequi at earum eum fugit.
-            Veniam placeat dicta sed. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Saepe obcaecati quis id rem nulla accusamus?
-            Doloremque, eaque a voluptate totam laborum, qui consequuntur soluta
-            veritatis perferendis reiciendis aperiam, obcaecati adipisci.
-          </p>
-        </div>
-        <div className="flex gap-[30px] flex-col lg:flex-row pt-[50px]">
+        <div className="flex gap-[30px]  flex-col lg:flex-row pt-[80px]">
           <img
             src={img}
             className="h-[500px] w-[320px] xl:w-[400px] flex-[.3] rounded-lg object-cover"
@@ -32,9 +21,12 @@ const About = () => {
               Front-End Developer!
             </h2>
             <p className="text-[14px] xl:text-[16px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              veritatis earum quibusdam ducimus in esse voluptatum dolores
-              incidunt, laborum temporibus?
+              I am Makhmudjonov Turgunboy. I was born in Namangan region in
+              2001. I successfully completed the Front-end course in Najot
+              ta'lim and received the Najot ta'lim Certificate. I am currently
+              working as a front-end developer. I speak Russian, English, Korean
+              and Uzbek. I can create e-commerce, SRM, Booking web sites and I
+              am gaining experience.
             </p>
             <div className="pt-[50px] flex flex-col 2xl:flex-row gap-[16px] justify-between">
               <div className="">
